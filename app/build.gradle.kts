@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.daria.example.quizapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.daria.example.quizapp"
