@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="create_account_button" type="id" />
+    <item name="first_name_edittext" type="id" />
+    <item name="last_name_edittext" type="id" />
+    <item name="email_address_edittext" type="id" />
+    <item name="password_edittext" type="id" />
+    <item name="confirm_password_edittext" type="id" />
+    <item name="toolbar" type="id" />
+</resources>
