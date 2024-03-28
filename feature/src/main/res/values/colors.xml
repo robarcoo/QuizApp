@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Grey">#D6D9DD</color>
+    <color name="TextColor">#747474</color>
+    <color name="ButtonColor">#2F7F41</color>
+    <color name="FieldColor">#EBF3EC</color>
+    <color name="FieldTextColor">#323137</color>
+    <color name="TitleColor">#000000</color>
+    <color name="CardTextColor">#EBF3EC</color>
+    <color name="DescriptionColor">#929292</color>
+</resources>

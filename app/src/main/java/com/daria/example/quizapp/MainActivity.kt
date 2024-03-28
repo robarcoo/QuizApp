@@ -10,11 +10,17 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.splash.SplashViewModel
 
 class MainActivity : ComponentActivity() {
+
+    private val viewModel: SplashViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
+        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
-        val viewModel: QuizViewModel by viewModels()
+        splashScreen.setKeepOnScreenCondition{ viewModel.isLoading.value}
         setContent {
             QuizAppTheme {
                 Surface(modifier = Modifier.fillMaxSize(),

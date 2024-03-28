@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.feature"
+    namespace = "com.example.splash"
     compileSdk = 34
 
     defaultConfig {
@@ -35,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.4"
+    }
 }
 
 dependencies {
@@ -45,13 +49,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0-alpha03")
     kapt("androidx.lifecycle:lifecycle-compiler:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.0-alpha03")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.0-alpha03")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0-alpha03")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0-alpha03")
-    implementation("androidx.activity:activity-ktx:1.8.2")
-
 }

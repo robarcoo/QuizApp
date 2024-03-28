@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.daria.example.quizapp"
-        minSdk = 23
+        minSdk = 26
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -51,6 +51,8 @@ android {
 }
 
 dependencies {
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation(project(":feature:splash"))
     // Is applied universally
     dokkaPlugin("org.jetbrains.dokka:mathjax-plugin:1.9.20")
 
@@ -77,4 +79,6 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation(project(":feature"))
 }
