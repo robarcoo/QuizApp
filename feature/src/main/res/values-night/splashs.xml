@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/dark_icon_foreground</item>
+        <item name="windowSplashScreenBackground">@drawable/bg2_dark</item>
+        <item name="postSplashScreenTheme">@style/Theme.QuizApp</item>
+    </style>
+</resources>
