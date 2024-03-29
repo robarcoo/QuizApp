@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboard_first_screen">Добро пожаловать в приложение для опросов!</string>
+    <string name="onboard_second_screen">Увлекательные викторины, чтобы расширить знания!</string>
+</resources>

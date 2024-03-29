@@ -54,6 +54,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation(project(":feature:splash"))
     implementation(project(":feature:onboard"))
+    implementation("androidx.compose.material3:material3-android:1.2.1")
     // Is applied universally
     dokkaPlugin("org.jetbrains.dokka:mathjax-plugin:1.9.20")
 
@@ -70,7 +71,6 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
