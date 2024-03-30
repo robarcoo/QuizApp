@@ -27,18 +27,17 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.common.BottomButton
 
 @Composable
+@Preview
 fun WelcomeScreen() {
-    val rubikMedium = FontFamily(
-        Font(R.font.rubik_medium)
-    )
-
-    Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-        Image(painter = painterResource(id = R.drawable.icon), contentDescription = "Logo", modifier = Modifier.height(96.dp))
+    val rubikMedium = FontFamily(Font(R.font.rubikmedium))
+    Column(modifier = Modifier.fillMaxSize().padding(start = 16.dp, end = 16.dp, top = 0.dp, bottom = 7.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+        Image(painter = painterResource(id = R.drawable.icon), contentDescription = "Logo", modifier = Modifier.height(100.dp))
         Image(painter = painterResource(id = R.drawable.welcome),
             contentDescription = "Welcome Image",
             modifier = Modifier.height(274.dp))
@@ -74,7 +73,7 @@ fun WelcomeScreen() {
 @Composable
 fun ClickText(text: String) {
     val rubik = FontFamily(
-        Font(R.font.rubik)
+        Font(R.font.rubik_regular)
     )
     var enabled by rememberSaveable { mutableStateOf(true) }
     Text(modifier = Modifier.clickable(
@@ -88,7 +87,7 @@ fun ClickText(text: String) {
 @Composable
 fun CardText(text : String) {
     val rubik = FontFamily(
-        Font(R.font.rubik)
+        Font(R.font.rubik_regular)
     )
     Text(text = text, fontFamily = rubik, color = colorResource(R.color.CardTextColor),
         fontSize = 16.sp,
