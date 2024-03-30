@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_button_text">Войти</string>
+    <string name="second_button_text">Создать аккаунт</string>
+    <string name="later">позже</string>
+    <string name="card_label">Войдите или Создайте аккаунт</string>
+    <string name="card_text">Войдите в систему или создайте учетную запись, чтобы пройти или создать тест</string>
+</resources>

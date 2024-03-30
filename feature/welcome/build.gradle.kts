@@ -13,6 +13,12 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.4"
+    }
 
     buildTypes {
         release {
@@ -40,4 +46,12 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation( "androidx.compose.ui:ui:1.6.4")
+    implementation ("androidx.compose.material:material:1.6.4")
+    implementation ("androidx.compose.runtime:runtime:1.6.4")
+    implementation ("androidx.compose.ui:ui-tooling:1.6.4")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation ("androidx.activity:activity-compose:1.8.2")
+    implementation (project(":core:common"))
 }

@@ -15,6 +15,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.splash.SplashViewModel
 import com.example.onboard.OnboardScreen
+import com.example.welcome.WelcomeScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                             contentDescription = ""
                         )
                     }
-                    OnboardScreen()
+                    WelcomeScreen()
             }
         }
     }

@@ -13,14 +13,11 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -36,6 +33,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.common.BottomButton
 
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -106,29 +104,10 @@ fun OnboardScreen() {
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(bottom = 20.dp, top = 0.dp, end = 0.dp, start = 0.dp),
                 color = colorResource(id = R.color.TitleColor))
-            BottomButton(">")
+            BottomButton(">", colorResource(id = R.color.ButtonColor), colorResource(id = R.color.ButtonTextColor))
         }
 
     }
 }
 
 
-@Composable
-fun BottomButton(text : String) {
-    val rubikMedium = FontFamily(
-        Font(R.font.rubik_medium)
-    )
-Button(onClick = { /*TODO*/ },
-    modifier = Modifier
-        .height(50.dp)
-        .width(275.dp),
-    shape = RoundedCornerShape(20.dp),
-    colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.ButtonColor))) {
-    Text(fontSize = 16.sp,
-        text = text,
-        color = colorResource(id = R.color.ButtonTextColor),
-        fontFamily = rubikMedium
-        )
-
-}
-}

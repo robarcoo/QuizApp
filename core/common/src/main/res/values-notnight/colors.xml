@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ButtonColor">#2F7F41</color>
+    <color name="FieldColor">#EBF3EC</color>
+    <color name="CardColor">#FFFFFF</color>
+    <color name="BorderColor">#FFFFFF</color>
+    <color name="TitleColor">#000000</color>
+    <color name="ChosenColor">#539561</color>
+    <color name="CircleColor">#85B48F</color>
+    <color name="ButtonTextColor">#FFFFFF</color>
+
+</resources>
