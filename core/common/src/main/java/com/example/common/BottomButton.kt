@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun BottomButton(text : String, color: Color, textColor: Color) {
+fun BottomButton(text : String, color: Color = colorResource(id = R.color.ButtonColor), textColor: Color = colorResource(id = R.color.ButtonTextColor)) {
     val rubikMedium = FontFamily(
         Font(R.font.rubik_medium)
     )

@@ -31,6 +31,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.common.BottomButton
+import com.example.common.CardText
+import com.example.common.ClickText
 
 @Composable
 @Preview
@@ -61,7 +63,7 @@ fun WelcomeScreen() {
             Spacer(modifier = Modifier.size(13.dp))
             CardText(stringResource(id = R.string.card_text))
             Spacer(modifier = Modifier.size(18.dp))
-            BottomButton(stringResource(id = R.string.first_button_text), colorResource(id = R.color.ButtonColor), colorResource(id = R.color.ButtonTextColor))
+            BottomButton(stringResource(id = R.string.first_button_text))
             Spacer(modifier = Modifier.size(16.dp))
             BottomButton(stringResource(id = R.string.second_button_text), colorResource(id = R.color.SecondButtonColor), colorResource(id = R.color.SecondButtonTextColor))
             Spacer(modifier = Modifier.size(8.dp))
@@ -70,27 +72,4 @@ fun WelcomeScreen() {
     }
 }
 
-@Composable
-fun ClickText(text: String) {
-    val rubik = FontFamily(
-        Font(R.font.rubik_regular)
-    )
-    var enabled by rememberSaveable { mutableStateOf(true) }
-    Text(modifier = Modifier.clickable(
-        enabled = enabled,
-        onClick = {
-            enabled = false
-        }), text = text, fontFamily = rubik, color = colorResource(R.color.ClickableTextColor),
-        fontSize = 16.sp,
-        textAlign = TextAlign.Center)
-}
-@Composable
-fun CardText(text : String) {
-    val rubik = FontFamily(
-        Font(R.font.rubik_regular)
-    )
-    Text(text = text, fontFamily = rubik, color = colorResource(R.color.CardTextColor),
-        fontSize = 16.sp,
-        textAlign = TextAlign.Center)
 
-}

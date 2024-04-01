@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enterName">Введите имя</string>
+    <string name="enterSurname">Введите фамилию</string>
+    <string name="enterEmail">Введите email</string>
+    <string name="enterPassword">Введите пароль</string>
+    <string name="enterPasswordAgain">Введите пароль повторно</string>
+    <string name="acceptPolicy">Продолжая, соглашаетесь с Политикой конфиденциальности</string>
+    <string name="createAccount">Создать аккаунт</string>
+</resources>

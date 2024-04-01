@@ -104,7 +104,7 @@ fun OnboardScreen() {
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(bottom = 20.dp, top = 0.dp, end = 0.dp, start = 0.dp),
                 color = colorResource(id = R.color.TitleColor))
-            BottomButton(">", colorResource(id = R.color.ButtonColor), colorResource(id = R.color.ButtonTextColor))
+            BottomButton(">")
         }
 
     }
