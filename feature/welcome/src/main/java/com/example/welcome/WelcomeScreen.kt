@@ -14,10 +14,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -37,7 +33,6 @@ import com.example.common.ClickText
 @Composable
 @Preview
 fun WelcomeScreen() {
-    val rubikMedium = FontFamily(Font(R.font.rubikmedium))
     Column(modifier = Modifier.fillMaxSize().padding(start = 16.dp, end = 16.dp, top = 0.dp, bottom = 7.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
         Image(painter = painterResource(id = R.drawable.icon), contentDescription = "Logo", modifier = Modifier.height(100.dp))
         Image(painter = painterResource(id = R.drawable.welcome),
@@ -55,7 +50,7 @@ fun WelcomeScreen() {
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.CenterHorizontally) {
             Text(text = stringResource(id = R.string.card_label),
-                fontSize = 24.sp, fontFamily = rubikMedium,
+                fontSize = 24.sp, fontFamily = FontFamily(Font(R.font.rubikmedium)),
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(bottom = 20.dp, top = 0.dp, end = 0.dp, start = 0.dp),
                 color = colorResource(id = R.color.TitleColor)

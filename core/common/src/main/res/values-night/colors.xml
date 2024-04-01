@@ -12,4 +12,5 @@
     <color name="CardTextColor">#858494</color>
     <color name="SecondButtonColor">#1C2317</color>
     <color name="SecondButtonTextColor">#D6D9DD</color>
+    <color name="TopBarTextColor">#FFFFFF</color>
 </resources>

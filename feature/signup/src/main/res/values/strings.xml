@@ -7,4 +7,9 @@
     <string name="enterPasswordAgain">Введите пароль повторно</string>
     <string name="acceptPolicy">Продолжая, соглашаетесь с Политикой конфиденциальности</string>
     <string name="createAccount">Создать аккаунт</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="passwordAgain">Повторите пароль</string>
 </resources>

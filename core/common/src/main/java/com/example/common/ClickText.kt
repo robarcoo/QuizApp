@@ -16,15 +16,13 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun ClickText(text: String) {
-    val rubik = FontFamily(
-        Font(R.font.rubik)
-    )
     var enabled by rememberSaveable { mutableStateOf(true) }
     Text(modifier = Modifier.clickable(
         enabled = enabled,
         onClick = {
             enabled = false
-        }), text = text, fontFamily = rubik, color = colorResource(R.color.ClickableTextColor),
+        }), text = text, fontFamily = FontFamily(Font(R.font.rubik)),
+        color = colorResource(R.color.ClickableTextColor),
         fontSize = 16.sp,
         textAlign = TextAlign.Center)
 }
