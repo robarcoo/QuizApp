@@ -17,9 +17,6 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun BottomButton(text : String, color: Color = colorResource(id = R.color.ButtonColor), textColor: Color = colorResource(id = R.color.ButtonTextColor)) {
-    val rubikMedium = FontFamily(
-        Font(R.font.rubik_medium)
-    )
     Button(onClick = { /*TODO*/ },
         modifier = Modifier
             .height(50.dp)
@@ -29,7 +26,8 @@ fun BottomButton(text : String, color: Color = colorResource(id = R.color.Button
         Text(fontSize = 16.sp,
             text = text,
             color = textColor,
-            fontFamily = rubikMedium
+            fontFamily = FontFamily(
+                Font(R.font.rubik_medium))
         )
 
     }

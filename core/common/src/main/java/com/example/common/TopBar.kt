@@ -11,6 +11,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -24,7 +26,9 @@ fun TopBar(text : String, color : Color = Color.Transparent, textColor : Color =
         verticalAlignment = Alignment.CenterVertically) {
         BackButton()
         Text(text = text, fontSize = 22.sp,
-            modifier = Modifier.padding(start = 64.dp, end = 55.dp, bottom = 0.dp, top = 0.dp),
-            color = textColor)
+            modifier = Modifier.padding(start = 50.dp, end = 45.dp, bottom = 0.dp, top = 0.dp),
+            color = textColor,
+            fontFamily = FontFamily(Font(R.font.rubik_medium))
+        )
     }
 }

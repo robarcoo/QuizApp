@@ -13,4 +13,7 @@
     <color name="SecondButtonColor">#1C2317</color>
     <color name="SecondButtonTextColor">#D6D9DD</color>
     <color name="TopBarTextColor">#FFFFFF</color>
+    <color name="TextFieldTextColor">#DADADA</color>
+    <color name="TextFieldColor">#1C2317</color>
+    <color name="TextFieldIconColor">#2F7F41</color>
 </resources>

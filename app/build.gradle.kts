@@ -55,6 +55,8 @@ dependencies {
     implementation(project(":feature:splash"))
     implementation(project(":feature:onboard"))
     implementation(project(":feature:welcome"))
+    implementation(project(":feature:signup"))
+
     implementation("androidx.compose.material3:material3-android:1.2.1")
     // Is applied universally
     dokkaPlugin("org.jetbrains.dokka:mathjax-plugin:1.9.20")

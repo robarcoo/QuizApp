@@ -2,11 +2,14 @@ package com.example.signup
 
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.Text
@@ -42,11 +45,12 @@ import com.example.common.TopBar
 @Composable
 @Preview
 fun SignupScreen() {
-    Column (modifier = Modifier.padding(bottom = 24.dp, start = 32.dp, end = 32.dp, top = 0.dp),
-        horizontalAlignment = Alignment.CenterHorizontally){
+    Column (modifier = Modifier.padding(bottom = 24.dp, start = 0.dp, end = 0.dp, top = 42.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Bottom){
         TopBar(text = stringResource(id = R.string.createAccount), color = colorResource(id = com.example.common.R.color.ButtonColor),
             textColor = colorResource(id = com.example.common.R.color.ButtonTextColor))
-        Column {
+        Column (modifier = Modifier.padding(start = 10.dp, end = 10.dp, top = 10.dp, bottom = 70.dp)) {
             TextfieldWithIcon(givenText = stringResource(id = R.string.enterName),
                 title = stringResource(id = R.string.name)) {
                 Icon(
@@ -86,6 +90,7 @@ fun SignupScreen() {
             }
         }
         BottomButton(text = stringResource(id = R.string.createAccount))
+        Spacer(modifier = Modifier.size(10.dp))
         ClickText(stringResource(id = R.string.acceptPolicy))
     }
 }
